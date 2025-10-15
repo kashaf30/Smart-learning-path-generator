@@ -38,11 +38,7 @@ uvicorn main:app --reload
 
 🪄 Start learning smarter!
 
-## ![pppp](https://github.com/user-attachments/assets/696a6342-8fcf-4001-ba80-87a336147349)
-![ppp](https://github.com/user-attachments/assets/326fd8c4-f1be-4e07-bcf2-730fb370918e)
-![pp](https://github.com/user-attachments/assets/4502c63f-b505-4025-a331-b90b3002f8f5)
-![p](https://github.com/user-attachments/assets/1e0dc78d-bc56-4b30-8167-cfb50efe6f2d)
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 🧭 Frontend: HTML5, CSS3, JavaScript (Vanilla)
 
@@ -59,4 +55,12 @@ uvicorn main:app --reload
 📌 Chat remembers previous outputs for better interaction.
 
 💾 Export or save your learning plan easily.
+
+
+![p](https://github.com/user-attachments/assets/b1bcb989-5b77-499c-85a8-24111ba83399)
+![pp](https://github.com/user-attachments/assets/767e572d-857d-41ff-a7e8-0aff875dbb79)
+![ppp](https://github.com/user-attachments/assets/d3c73526-3cce-42bc-8dd9-e1118fad83ce)
+![pppp](https://github.com/user-attachments/assets/64ff8bba-5b6d-493a-a820-6792bd8a39c1)
+
+
 
