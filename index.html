@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Learning - AI Path</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>✨ Smart Learning Assistant</h1>
+      <p>AI powered personalized learning path in seconds 🚀</p>
+    </header>
+
+    <!-- ===== Input Form ===== -->
+    <section class="form-section glass-card">
+      <form id="userForm">
+        <input type="text" id="skills" placeholder="Enter your skills (e.g. HTML, CSS)" required/>
+        <input type="text" id="goal" placeholder="Enter your learning goal (e.g. Web Developer)" required/>
+        <button type="submit" class="btn primary"><i class="fa-solid fa-robot"></i> Generate Learning Path</button>
+      </form>
+    </section>
+
+    <!-- ===== Loading ===== -->
+    <div id="loading" class="loading">
+      <div class="spinner"></div>
+      <p>✨ Generating your personalized learning path...</p>
+    </div>
+
+    <!-- ===== Results ===== -->
+    <section id="results" class="results-section glass-card">
+      <h2 style="color: var(--primary); margin-bottom: 20px; text-align: center;">Your Personalized Learning Path</h2>
+      <div id="pathResult"></div>
+      <div class="actions">
+        <button onclick="savePath()" class="btn"><i class="fa-solid fa-floppy-disk"></i> Save Path</button>
+        <button onclick="exportToTXT()" class="btn"><i class="fa-solid fa-download"></i> Export</button>
+        <button onclick="openChat()" class="btn"><i class="fa-solid fa-comments"></i> Chat with AI</button>
+      </div>
+    </section>
+
+    <!-- ===== Chat Section ===== -->
+    <section id="chatSection" class="chat-section glass-card">
+      <div class="chat-header">
+        <h2><i class="fa-solid fa-robot"></i> AI Assistant</h2>
+        <button onclick="closeChat()" class="close-btn">✖</button>
+      </div>
+      <div id="chatMessages" class="chat-messages">
+        <div class="chat-message ai-message">
+          Hello! I'm your AI learning assistant. How can I help you with your learning path today?
+        </div>
+      </div>
+      <div class="chat-input">
+        <input type="text" id="chatInput" placeholder="Ask anything about your learning path..."/>
+        <button onclick="sendMessage()" class="btn send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+from neo4j import GraphDatabase
+
+# Direct values use karo
+URI = "neo4j+s://69d4721d.databases.neo4j.io"
+USER = "neo4j"
+PASSWORD = "4dTFbCGG-FLCnn0pVcAGy6qgmMq9IWpizgGQnxarvKk"
+
+print("🔍 Testing Neo4j Connection...")
+print(f"URI: {URI}")
+print(f"User: {USER}")
+print(f"Password: {PASSWORD[:5]}...")  # First 5 characters only for security
+
+try:
+    # Driver banayein
+    driver = GraphDatabase.driver(URI, auth=(USER, PASSWORD))
+    
+    # Connection test karein
+    with driver.session() as session:
+        result = session.run("RETURN 'Connection Successful!' AS message")
+        message = result.single()["message"]
+        print(f"✅ SUCCESS: {message}")
+    
+    driver.close()
+    
+except Exception as e:
+    print(f"❌ ERROR: {type(e).__name__}")
+    print(f"❌ ERROR DETAILS: {str(e)}")
